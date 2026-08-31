@@ -55,7 +55,7 @@
         body {
             background-color: #000000;
             color: #ffffff;
-            font-family: monospace; /* Только чистый monospace */
+            font-family: monospace;
             margin: 0;
             padding: 40px 20px;
             font-size: 16px;
@@ -100,18 +100,6 @@
         li {
             margin-bottom: 8px;
         }
-        .cursor {
-            display: inline-block;
-            width: 10px;
-            height: 1.1em;
-            background-color: #ffffff;
-            vertical-align: middle;
-            animation: blink 1s step-end infinite;
-        }
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
         
         /* Responsive design */
         @media (max-width: 600px) {
@@ -128,7 +116,7 @@
             <span class="prompt">michael@bobarev-com:~#</span> <span class="cmd">whoami</span>
         </div>
         <h1>Михаил Бобарев | Michael Bobarev</h1>
-        <p>Digital creator: #photo #humour #lifehacks #lifemoments and ... ♾️<br>Создаю контент: #фото #юмор #лайфхаки #жизньвмоменте и … ♾️</p>
+        <p>Digital creator: #photo #humour #lifehacks #lifemoments and ... ♾️<br>Создаю контент: #фото #юмор #лайфхаки #жизньвмоменте … ♾️</p>
         
         <div>
             <span class="prompt">michael@bobarev-com:~#</span> <span class="cmd">ls -l ./links</span>
@@ -153,10 +141,6 @@
             <span class="prompt">michael@bobarev-com:~#</span> <span class="cmd">cat contact.txt</span>
         </div>
         <p>Email: <a href="mailto:ibobarev@gmail.com">ibobarev@gmail.com</a></p>
-
-        <div>
-            <span class="prompt">michael@bobarev-com:~#</span> <span class="cursor"></span>
-        </div>
     </main>
 </body>
 </html>
