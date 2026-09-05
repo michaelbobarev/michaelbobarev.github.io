@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
     
-    <!-- Основное SEO -->
+    <!-- Основное SEO и канонический адрес -->
     <title>Михаил Бобарев | Michael Bobarev</title>
     <meta name="description" content="Digital creator: #photo #humour #lifehacks #lifemoments. Создаю контент: #фото #юмор #лайфхаки #жизньвмоменте">
     <meta name="keywords" content="Михаил Бобарев, Michael Bobarev, digital creator, photo, контент, подкаст">
     <meta name="author" content="Michael Bobarev">
+    <link rel="canonical" href="https://www.bobarev.com/">
     
-    <!-- Иконка сайта (Favicon) -->
+    <!-- Предзагрузка DNS для поддоменов -->
+    <link rel="dns-prefetch" href="https://blog.bobarev.com">
+    <link rel="dns-prefetch" href="https://podcast.bobarev.com">
+    
+    <!-- Иконки для веба и Apple устройств -->
     <link rel="icon" type="image/png" href="https://www.bobarev.com/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.bobarev.com/favicon.png">
     
-    <!-- Open Graph (для красивых превью в соцсетях и Telegram) -->
+    <!-- Open Graph (превью в соцсетях и мессенджерах) -->
     <meta property="og:title" content="Михаил Бобарев | Michael Bobarev">
     <meta property="og:description" content="Digital creator: #photo #humour #lifehacks #lifemoments ... ♾️">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.bobarev.com/">
     <meta property="og:image" content="https://www.bobarev.com/preview.png">
     
-    <!-- Twitter Card (для красивых превью в X/Twitter) -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Михаил Бобарев | Michael Bobarev">
     <meta name="twitter:description" content="Digital creator: #photo #humour #lifehacks #lifemoments ... ♾️">
@@ -36,6 +43,12 @@
       "url": "https://www.bobarev.com",
       "image": "https://www.bobarev.com/preview.png",
       "jobTitle": "Digital Creator",
+      "knowsAbout": [
+        "Content Creation",
+        "Photography",
+        "Podcasting",
+        "Technology"
+      ],
       "sameAs": [
         "https://podcast.bobarev.com",
         "https://t.me/michaelbobarev",
@@ -114,7 +127,7 @@
     </style>
 </head>
 <body>
-    <main class="container">
+    <main class="container" role="main">
         <div>
             <span class="prompt">michael@bobarev-com:~#</span> <span class="cmd">whoami</span>
         </div>
@@ -124,7 +137,7 @@
         <div>
             <span class="prompt">michael@bobarev-com:~#</span> <span class="cmd">ls -l ./links</span>
         </div>
-        <nav>
+        <nav aria-label="Социальные сети и проекты">
             <ul>
                 <li><a href="https://blog.bobarev.com" target="_blank">Блог | Blog</a></li>
                 <li><a href="https://podcast.bobarev.com" target="_blank">Подкаст | Podcast</a></li>
