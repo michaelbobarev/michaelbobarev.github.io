@@ -33,40 +33,56 @@
     <meta name="twitter:description" content="Digital creator: #photo #humour #lifehacks #lifemoments ... ♾️">
     <meta name="twitter:image" content="https://www.bobarev.com/preview.png">
 
-    <!-- Микроразметка Schema.org (JSON-LD) -->
+    <!-- Микроразметка Schema.org (JSON-LD) со связкой графа -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Михаил Бобарев",
-      "alternateName": "Michael Bobarev",
-      "url": "https://www.bobarev.com",
-      "image": "https://www.bobarev.com/preview.png",
-      "jobTitle": "Digital Creator",
-      "knowsAbout": [
-        "Content Creation",
-        "Photography",
-        "Video Production",
-        "Podcasting",
-        "Blogging",
-        "Storytelling",
-        "Lifehacks",
-        "Technology",
-        "Artificial Intelligence"
-      ],
-      "sameAs": [
-        "https://podcast.bobarev.com",
-        "https://t.me/michaelbobarev",
-        "https://facebook.com/michaelbobarev",
-        "https://instagram.com/michaelbobarev",
-        "https://x.com/michaelbobarev",
-        "https://pinterest.com/michaelbobarev",
-        "https://youtube.com/michaelbobarev",
-        "https://linkedin.com/in/bobarev",
-        "https://www.reddit.com/user/michaelbobarev",
-        "https://vk.ru/michaelbobarev",
-        "https://www.behance.net/michaelbobarev",
-        "https://blog.bobarev.com"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.bobarev.com/#website",
+          "url": "https://www.bobarev.com/",
+          "name": "Михаил Бобарев | Michael Bobarev",
+          "inLanguage": "ru",
+          "description": "Digital creator: #photo #humour #lifehacks #lifemoments",
+          "publisher": {
+            "@id": "https://www.bobarev.com/#person"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.bobarev.com/#person",
+          "name": "Михаил Бобарев",
+          "alternateName": "Michael Bobarev",
+          "url": "https://www.bobarev.com/",
+          "image": "https://www.bobarev.com/preview.png",
+          "jobTitle": "Digital Creator",
+          "knowsAbout": [
+            "Content Creation",
+            "Photography",
+            "Video Production",
+            "Podcasting",
+            "Blogging",
+            "Storytelling",
+            "Lifehacks",
+            "Technology",
+            "Artificial Intelligence"
+          ],
+          "sameAs": [
+            "https://blog.bobarev.com",
+            "https://podcast.bobarev.com",
+            "https://t.me/michaelbobarev",
+            "https://facebook.com/michaelbobarev",
+            "https://instagram.com/michaelbobarev",
+            "https://x.com/michaelbobarev",
+            "https://pinterest.com/michaelbobarev",
+            "https://youtube.com/michaelbobarev",
+            "https://linkedin.com/in/bobarev",
+            "https://www.reddit.com/user/michaelbobarev",
+            "https://vk.ru/michaelbobarev",
+            "https://www.behance.net/michaelbobarev"
+          ]
+        }
       ]
     }
     </script>
