@@ -3,44 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404: Not Found | Michael Bobarev</title>
+    <meta name="theme-color" content="#000000">
     <meta name="robots" content="noindex, nofollow">
+    
+    <title>404: Not Found | Michael Bobarev</title>
+    
+    <!-- Иконки для веба и Apple устройств -->
     <link rel="icon" type="image/png" sizes="192x192" href="https://www.bobarev.com/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.bobarev.com/favicon.png">
+
     <style>
-        body {
-            background: #000000;
-            color: #e6edf3;
-            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 24px;
+        *, *::before, *::after {
             box-sizing: border-box;
-        }
-        .terminal {
-            max-width: 480px;
-            width: 100%;
-            line-height: 1.6;
+            font-family: ui-monospace, 'SF Mono', Menlo, Monaco, Consolas, monospace !important;
             font-size: 15px;
+            line-height: 1.5;
         }
-        .prompt { color: #58a6ff; }
-        .error { color: #f85149; }
-        .hint { color: #8b949e; margin-top: 18px; }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .prompt {
+            color: #4af626; /* Terminal green */
+            font-weight: bold;
+        }
+        .cmd {
+            color: #ffffff;
+        }
+        .error {
+            color: #ff4d4d; /* Terminal red */
+        }
         a {
-            color: #e6edf3;
-            text-decoration: underline;
-            text-underline-offset: 4px;
+            color: #3b8eea; /* Terminal blue */
+            text-decoration: none;
         }
-        a:hover { color: #58a6ff; }
+        a:hover {
+            color: #ffffff;
+            background-color: #3b8eea;
+        }
+        p {
+            margin: 0 0 24px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+            }
+            *, *::before, *::after {
+                font-size: 13.5px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="terminal">
-        <p><span class="prompt">guest@bobarev:~$</span> check status</p>
-        <p class="error">zsh: 404: resource or route not found</p>
-        <p class="hint">Back to root: <a href="/">cd ~</a></p>
-    </div>
+    <main class="container" role="main">
+        <div>
+            <span class="prompt">michael@bobarev-com:~#</span> <span class="cmd">check status</span>
+        </div>
+        <p class="error">404: resource or route not found</p>
+
+        <p>Back to home: <a href="/">home</a></p>
+    </main>
 </body>
 </html>
