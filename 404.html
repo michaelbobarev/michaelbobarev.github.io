@@ -3,14 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=https://www.bobarev.com/">
-    <link rel="canonical" href="https://www.bobarev.com/">
-    <script>
-        window.location.replace("https://www.bobarev.com/");
-    </script>
+    <title>404: Not Found | Michael Bobarev</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.bobarev.com/favicon.png">
+    <style>
+        body {
+            background: #000000;
+            color: #e6edf3;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 24px;
+            box-sizing: border-box;
+        }
+        .terminal {
+            max-width: 480px;
+            width: 100%;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        .prompt { color: #58a6ff; }
+        .error { color: #f85149; }
+        .hint { color: #8b949e; margin-top: 18px; }
+        a {
+            color: #e6edf3;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        a:hover { color: #58a6ff; }
+    </style>
 </head>
 <body>
-    <p>Перенаправление на <a href="https://www.bobarev.com/">главную страницу</a>...</p>
+    <div class="terminal">
+        <p><span class="prompt">guest@bobarev:~$</span> check status</p>
+        <p class="error">zsh: 404: resource or route not found</p>
+        <p class="hint">Back to root: <a href="/">cd ~</a></p>
+    </div>
 </body>
 </html>
