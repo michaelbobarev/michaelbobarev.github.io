@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#000000">
     <meta name="robots" content="noindex, nofollow">
     
-    <title>404: Not Found | Michael Bobarev</title>
+    <title>404: Not Found | Михаил Бобарев</title>
     
     <!-- Иконки для веба и Apple устройств -->
     <link rel="icon" type="image/png" sizes="192x192" href="https://www.bobarev.com/favicon.png">
@@ -42,6 +42,8 @@
         a {
             color: #3b8eea; /* Terminal blue */
             text-decoration: none;
+            display: inline-block;
+            padding: 2px 0;
         }
         a:hover {
             color: #ffffff;
@@ -49,6 +51,7 @@
         }
         p {
             margin: 0 0 24px 0;
+            line-height: 1.8;
         }
 
         @media (max-width: 600px) {
@@ -64,11 +67,15 @@
 <body>
     <main class="container" role="main">
         <div>
-            <span class="prompt">michael@bobarev-com:~#</span> <span class="cmd">check status</span>
+            <span class="prompt">michael@bobarev-com:~#</span> <span class="cmd">cat 404.txt</span>
         </div>
-        <p class="error">404: resource or route not found</p>
+        <p class="error">Ошибка 404: страница не найдена</p>
+        <p>Такой страницы на сайте нет — возможно, в адресе опечатка или ссылка устарела.</p>
 
-        <p>Back to home: <a href="/">home</a></p>
+        <div>
+            <span class="prompt">michael@bobarev-com:~#</span> <span class="cmd">cd ~</span>
+        </div>
+        <p><a href="/">Вернуться домой | Back to home</a></p>
     </main>
 </body>
 </html>
