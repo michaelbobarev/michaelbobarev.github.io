@@ -222,5 +222,38 @@
             Telegram: <a href="https://t.me/michaelbobarev" target="_blank" rel="me">@michaelbobarev</a>
         </p>
     </main>
+    <!-- WebMCP Tool Registration for AI Agents -->
+    <script>
+      (function () {
+        const mc = document.modelContext || navigator.modelContext;
+        if (mc && typeof mc.registerTool === 'function') {
+          mc.registerTool({
+            name: 'get_creator_profile',
+            description: 'Retrieve verified profile information, official links, and contact details for digital creator Michael Bobarev (Михаил Бобарев).',
+            inputSchema: {
+              type: 'object',
+              properties: {},
+              additionalProperties: false
+            },
+            execute: async function () {
+              return JSON.stringify({
+                name: 'Michael Bobarev (Михаил Бобарев)',
+                birthDate: '1979-10-15',
+                role: 'Visual Creator, Photographer & Videographer',
+                url: 'https://www.bobarev.com/',
+                wikidata: 'https://www.wikidata.org/wiki/Q141591260',
+                orcid: 'https://orcid.org/0009-0002-4039-1694',
+                youtube: 'https://www.youtube.com/channel/UCGn8BDJv_PYMSEdG6u-ZzGw',
+                blog: 'https://blog.bobarev.com',
+                podcast: 'https://podcast.bobarev.com',
+                telegram: 'https://t.me/michaelbobarev',
+                email: 'ibobarev@gmail.com'
+              });
+            }
+          });
+        }
+      })();
+    </script>
 </body>
 </html>
+
