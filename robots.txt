@@ -1,3 +1,38 @@
+# Content Signals Policy for AI Crawlers & Search Engines
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
+
+# OpenAI (ChatGPT Search & Agent)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# Google (Search & AI Overviews / Gemini)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Yandex
+User-agent: Yandex
+Allow: /
+
 Sitemap: https://www.bobarev.com/sitemap.xml
