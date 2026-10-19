@@ -1,0 +1,16 @@
+{
+  "name": "Michael Bobarev Agent Hub",
+  "version": "1.0.0",
+  "description": "Agent-ready metadata and context hub for digital creator Michael Bobarev.",
+  "owner": "ibobarev@gmail.com",
+  "endpoints": {
+    "profile": "https://www.bobarev.com/",
+    "llms": "https://www.bobarev.com/llms.txt",
+    "markdown": "https://www.bobarev.com/index.md",
+    "catalog": "https://www.bobarev.com/.well-known/ai-catalog.json"
+  },
+  "capabilities": [
+    "knowledge-retrieval",
+    "social-graph"
+  ]
+}
