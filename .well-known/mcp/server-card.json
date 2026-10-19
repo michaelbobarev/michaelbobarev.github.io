@@ -1,0 +1,22 @@
+{
+  "protocolVersion": "2025-06-18",
+  "serverInfo": {
+    "name": "bobarev-profile-mcp",
+    "title": "Michael Bobarev Official Profile & Knowledge Graph Hub",
+    "version": "1.0.0"
+  },
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://www.bobarev.com/.well-known/mcp/server-card.json"
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    }
+  },
+  "instructions": "Official identity hub for digital creator, photographer, and videographer Michael Bobarev (Михаил Бобарев). Full context is available at https://www.bobarev.com/llms.txt"
+}
