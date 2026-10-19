@@ -36,3 +36,4 @@ User-agent: Yandex
 Allow: /
 
 Sitemap: https://www.bobarev.com/sitemap.xml
+Agentmap: https://www.bobarev.com/.well-known/ai-catalog.json
