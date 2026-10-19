@@ -1,0 +1,26 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Michael Bobarev (Михаил Бобарев)",
+    "identifier": "did:web:www.bobarev.com",
+    "documentationUrl": "https://www.bobarev.com/llms.txt"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:www.bobarev.com:mcp:creator-profile",
+      "displayName": "Michael Bobarev Official Profile & Media Graph",
+      "type": "application/mcp-server-card+json",
+      "url": "https://www.bobarev.com/.well-known/mcp/server-card.json",
+      "capabilities": [
+        "CreatorProfile",
+        "SocialGraph",
+        "KnowledgeGraphIdentifiers"
+      ],
+      "representativeQueries": [
+        "Who is Michael Bobarev (Михаил Бобарев)?",
+        "What are the official social media links and projects of Michael Bobarev?",
+        "What is the Wikidata ID and ORCID of Michael Bobarev?"
+      ]
+    }
+  ]
+}
