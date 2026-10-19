@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "michael-bobarev-profile",
+      "type": "skill-md",
+      "description": "Official profile, verified identifiers (Wikidata, ORCID), and social links for digital creator Michael Bobarev.",
+      "url": "https://www.bobarev.com/.well-known/agent-skills/profile/SKILL.md",
+      "digest": "sha256:0eafd0514adf98896b76c9466e5528dc23832b03d4db14a190c020b4a27573bd",
+      "sha256": "0eafd0514adf98896b76c9466e5528dc23832b03d4db14a190c020b4a27573bd"
+    }
+  ]
+}
